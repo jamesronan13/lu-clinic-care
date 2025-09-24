@@ -1,0 +1,56 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/loginbg" android:padding="16dp">
+    <ScrollView android:id="@+id/scrollViewAdditionalInfo" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingTop="16dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Additional Information" android:textStyle="bold" android:textColor="@android:color/white" android:paddingBottom="16dp" android:textSize="20sp"/>
+            <!--  Past Medical History  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Past Medical History (Chronic Conditions, Past Illnesses, Surgeries, Hospitalizations, etc.)" android:textStyle="bold" android:textColor="@android:color/white" android:layout_marginTop="8dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select 'Other' if the option you choose is not listed, or if you have multiple options from the choices, you can type them all in the text box below)" android:textStyle="italic" android:textColor="@android:color/white" android:layout_marginTop="8dp"/>
+            <Spinner android:id="@+id/spinnerPastMedicalHistory" android:layout_width="match_parent" android:layout_height="48dp" android:background="@android:drawable/btn_dropdown"/>
+            <EditText android:id="@+id/editTextPastMedicalHistoryOther" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="If Other, specify here" android:inputType="textMultiLine" android:lines="2" android:enabled="false" android:background="@android:drawable/edit_text"/>
+            <DatePicker android:id="@+id/datePickerMedicalEvent" android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="gone"/>
+            <!--  Allergies  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Allergies (Medications, Food, Environment, etc.)" android:textStyle="bold" android:textColor="@android:color/white" android:layout_marginTop="16dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select 'Other' if the option you choose is not listed, or if you have multiple options from the choices, you can type them all in the text box below)" android:textStyle="italic" android:textColor="@android:color/white" android:layout_marginTop="8dp"/>
+            <Spinner android:id="@+id/spinnerAllergies" android:layout_width="match_parent" android:layout_height="48dp" android:background="@android:drawable/btn_dropdown"/>
+            <EditText android:id="@+id/editTextAllergiesOther" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="If Other, specify here" android:inputType="textMultiLine" android:lines="2" android:enabled="false" android:background="@android:drawable/edit_text"/>
+            <!--  Medications  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medications (Common Prescription Medications, Over-the-Counter (OTC), Supplements, etc.)" android:textStyle="bold" android:textColor="@android:color/white" android:layout_marginTop="16dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select 'Other' if the option you choose is not listed, or if you have multiple options from the choices, you can type them all in the text box below)" android:textStyle="italic" android:textColor="@android:color/white" android:layout_marginTop="8dp"/>
+            <Spinner android:id="@+id/spinnerMedications" android:layout_width="match_parent" android:layout_height="48dp" android:background="@android:drawable/btn_dropdown"/>
+            <EditText android:id="@+id/editTextMedicationsOther" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="If Other, specify here" android:inputType="textMultiLine" android:lines="2" android:enabled="false" android:background="@android:drawable/edit_text"/>
+            <!--  Immunizations  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Immunizations (Routine Vaccines, Other Vaccines, etc.)" android:textStyle="bold" android:textColor="@android:color/white" android:layout_marginTop="16dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select 'Other' if the option you choose is not listed, or if you have multiple options from the choices, you can type them all in the text box below)" android:textStyle="italic" android:textColor="@android:color/white" android:layout_marginTop="8dp"/>
+            <Spinner android:id="@+id/spinnerImmunizations" android:layout_width="match_parent" android:layout_height="48dp" android:background="@android:drawable/btn_dropdown"/>
+            <EditText android:id="@+id/editTextImmunizationsOther" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="If Other, specify here" android:inputType="textMultiLine" android:lines="2" android:enabled="false" android:background="@android:drawable/edit_text"/>
+            <DatePicker android:id="@+id/datePickerImmunizationDate" android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="gone"/>
+            <!--  Family History Section  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Family History (Heart Disease, Diabetes, Cancer, Mental Health, etc.)" android:textStyle="bold" android:textColor="@android:color/white" android:layout_marginTop="16dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select 'Other' if the option you choose is not listed, or if you have multiple options from the choices, you can type them all in the text box below)" android:textStyle="italic" android:textColor="@android:color/white" android:layout_marginTop="8dp"/>
+            <Spinner android:id="@+id/spinnerFamilyHistory" android:layout_width="match_parent" android:layout_height="48dp" android:background="@android:drawable/btn_dropdown"/>
+            <EditText android:id="@+id/editTextFamilyHistory" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="If Other, specify here" android:inputType="textMultiLine" android:lines="2" android:enabled="false" android:background="@android:drawable/edit_text"/>
+            <!--  Social History Section  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Social History" android:textColor="@android:color/white" android:textStyle="bold" android:textSize="20sp" android:layout_marginTop="16dp"/>
+            <!--  Smoking  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Smoking" android:textStyle="bold" android:textColor="@android:color/white" android:layout_marginTop="8dp"/>
+            <Spinner android:id="@+id/spinnerSmoking" android:layout_width="match_parent" android:layout_height="48dp" android:background="@android:drawable/btn_dropdown"/>
+            <!--  Alcohol Use  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alcohol Use" android:textStyle="bold" android:textColor="@android:color/white" android:layout_marginTop="8dp"/>
+            <Spinner android:id="@+id/spinnerAlcoholUse" android:layout_width="match_parent" android:layout_height="48dp" android:background="@android:drawable/btn_dropdown"/>
+            <!--  Drug Use  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Drug Use" android:textStyle="bold" android:textColor="@android:color/white" android:layout_marginTop="8dp"/>
+            <Spinner android:id="@+id/spinnerDrugUse" android:layout_width="match_parent" android:layout_height="48dp" android:background="@android:drawable/btn_dropdown"/>
+            <!--  Exercise  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Exercise" android:textStyle="bold" android:textColor="@android:color/white" android:layout_marginTop="8dp"/>
+            <Spinner android:id="@+id/spinnerExercise" android:layout_width="match_parent" android:layout_height="48dp" android:background="@android:drawable/btn_dropdown"/>
+            <!--  Diet  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Diet" android:textStyle="bold" android:textColor="@android:color/white" android:layout_marginTop="8dp"/>
+            <Spinner android:id="@+id/spinnerDiet" android:layout_width="match_parent" android:layout_height="48dp" android:background="@android:drawable/btn_dropdown"/>
+            <!--  Occupation  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Occupation" android:textStyle="bold" android:textColor="@android:color/white" android:layout_marginTop="8dp"/>
+            <Spinner android:id="@+id/spinnerOccupation" android:layout_width="match_parent" android:layout_height="48dp" android:background="@android:drawable/btn_dropdown"/>
+            <!--  Save Button  -->
+            <Button android:id="@+id/buttonSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Save" android:textColor="@android:color/white" android:layout_marginTop="16dp" android:background="@color/Green_blue"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

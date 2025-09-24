@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lavender">#8692f7</color>
+    <color name="Green_blue">#08bc8c</color>
+    <color name="Aqua_island">#a0dccc</color>
+    <color name="Barley_white">#fff4cc</color>
+    <color name="Soft_peach">#f0ecec</color>
+    <color name="light_gray">#4B4C4C</color>
+    <color name="gray">#2F2F2F</color>
+    <color name="dark_gray">#131314</color>
+    <color name="red">#FF0000</color>
+    <color name="lime_green">#32CD32</color>
+    <color name="green">#008000</color>
+    <color name="Green_blue_light">#3DDC7D</color>
+    <color name="GreenAdmin">#7c9a1c</color>
+    <color name="odd_color">#F0F0F0</color>
+</resources>

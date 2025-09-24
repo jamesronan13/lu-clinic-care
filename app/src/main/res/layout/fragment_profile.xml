@@ -1,0 +1,189 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginbg"
+        android:padding="16dp">
+
+        <!-- First Name -->
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:hint="First Name"
+            android:enabled="false"
+            android:inputType="text"
+            android:textColorHint="@android:color/white"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Middle Name -->
+        <EditText
+            android:id="@+id/etMiddleName"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:hint="Middle Name"
+            android:textColorHint="@android:color/white"
+            android:textColor="@color/white"
+            android:enabled="false"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/etFirstName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Last Name -->
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:hint="Last Name"
+            android:textColorHint="@android:color/white"
+            android:textColor="@color/white"
+            android:enabled="false"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/etMiddleName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Date of Birth -->
+        <EditText
+            android:id="@+id/editText_dob"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:hint="Date of Birth"
+            android:textColorHint="@android:color/white"
+            android:textColor="@color/white"
+            android:enabled="false"
+            android:inputType="date"
+            app:layout_constraintTop_toBottomOf="@id/etLastName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:hint="Email"
+            android:textColorHint="@android:color/white"
+            android:textColor="@color/white"
+            android:enabled="false"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@id/editText_dob"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Cellphone Number -->
+        <EditText
+            android:id="@+id/editText_phone"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:hint="Cellphone Number"
+            android:textColorHint="@android:color/white"
+            android:textColor="@color/white"
+            android:enabled="false"
+            android:inputType="phone"
+            app:layout_constraintTop_toBottomOf="@id/editText_email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <RadioGroup
+            android:id="@+id/radio_group_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editText_phone">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:enabled="false"
+                android:text="Male"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:enabled="false"
+                android:layout_marginTop="20dp"
+                android:text="Female"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnUpdateProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:backgroundTint="@color/Green_blue"
+            android:text="Update Profile"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radio_group_gender" />
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Save Profile"
+            android:visibility="gone"
+            android:backgroundTint="@color/Green_blue"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/btnUpdateProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/btnChangePassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/Green_blue"
+            android:text="Change Password"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/btnSaveProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnClientAdditionalInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/Green_blue"
+            android:text="Client's Additional Information"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/btnChangePassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Progress Bar (Initially hidden) -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/btnSaveProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

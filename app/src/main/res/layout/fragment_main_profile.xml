@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsersFragment.MainProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:padding="25dp"
+            android:background="@drawable/loginbg"
+            android:layout_centerVertical="true">
+
+            <!-- Logo Image -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/rxlogo"
+                android:contentDescription="App Logo" />
+
+            <!-- Profile Section Title (Clickable) -->
+            <LinearLayout
+                android:id="@+id/profileSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="50dp"
+                android:onClick="navigateToProfileFragment">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Profile"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_right"
+                    android:contentDescription="Arrow" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Health Profile Section (Clickable) -->
+            <LinearLayout
+                android:id="@+id/healthProfileSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="30dp"
+                android:onClick="navigateToHealthProfileFragment">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Health Profile"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_right"
+                    android:contentDescription="Arrow" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- About Us Section (Clickable) -->
+            <LinearLayout
+                android:id="@+id/aboutUsSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="30dp"
+                android:onClick="navigateToAboutUsFragment">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_right"
+                    android:contentDescription="Arrow" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Terms and Conditions Section (Clickable) -->
+            <LinearLayout
+                android:id="@+id/termsAndConditionsSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="30dp"
+                android:onClick="navigateToTermsActivity">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms and Conditions"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_right"
+                    android:contentDescription="Arrow" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Privacy Policy Section (Clickable) -->
+            <LinearLayout
+                android:id="@+id/privacyPolicySection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="30dp"
+                android:onClick="navigateToPrivacyPolicyActivity">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_right"
+                    android:contentDescription="Arrow" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Logout"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/Green_blue" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

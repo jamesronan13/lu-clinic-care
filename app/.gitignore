@@ -1,0 +1,18 @@
+# Gradle files
+.gradle/
+build/
+app/build/
+
+# Local configuration (unique per computer)
+local.properties
+
+# Android Studio / IntelliJ project files
+.idea/
+*.iml
+
+# Mac / Windows system files
+.DS_Store
+Thumbs.db
+
+# Firebase Admin SDK key (for future safety)
+serviceAccountKey.json

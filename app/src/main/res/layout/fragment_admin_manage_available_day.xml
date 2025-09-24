@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvManageDaysTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Available Days"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="8dp" />
+
+        <!-- Instruction -->
+        <TextView
+            android:id="@+id/tvInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a date and set the availability for each clinic."
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Date Picker -->
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="true"
+            android:datePickerMode="calendar" />
+
+        <!-- Clinic Toggle for Medical -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/tvMedicalClinic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Medical Clinic"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <Switch
+                android:id="@+id/switchMedicalClinic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open" />
+        </LinearLayout>
+
+        <!-- Clinic Toggle for Dental -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/tvDentalClinic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dental Clinic"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <Switch
+                android:id="@+id/switchDentalClinic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open" />
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSaveChanges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/GreenAdmin"
+            android:layout_marginTop="24dp"
+            android:padding="8dp" />
+
+    </LinearLayout>
+</ScrollView>

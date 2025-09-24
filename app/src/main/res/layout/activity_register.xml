@@ -1,0 +1,249 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context=".Register">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/tvRegisterTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Register"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/Green_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:inputType="textPersonName"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:hint="First Name"
+            android:background="@drawable/tryedittext"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/Green_blue"
+            app:layout_constraintEnd_toStartOf="@id/etMiddleName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvRegisterTitle"
+            app:layout_constraintHorizontal_chainStyle="spread" />
+
+        <!-- Middle Name EditText -->
+        <EditText
+            android:id="@+id/etMiddleName"
+            android:inputType="textPersonName"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="32dp"
+            android:hint="Middle Na.."
+            android:background="@drawable/tryedittext"
+
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textColorHint="@color/Green_blue"
+            app:layout_constraintEnd_toStartOf="@id/etLastName"
+            app:layout_constraintStart_toEndOf="@id/etFirstName"
+            app:layout_constraintTop_toBottomOf="@id/tvRegisterTitle" />
+
+        <!-- Last Name EditText -->
+        <EditText
+            android:id="@+id/etLastName"
+            android:inputType="textPersonName"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Last Name"
+            android:background="@drawable/tryedittext"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/Green_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/etMiddleName"
+            app:layout_constraintTop_toBottomOf="@id/tvRegisterTitle" />
+
+
+        <!-- Date of Birth EditText -->
+        <EditText
+            android:id="@+id/editText_register_dob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="32dp"
+            android:focusable="false"
+            android:hint="Date of Birth"
+            android:background="@drawable/tryedittext"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/Green_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etLastName" />
+
+                <TextView
+                    android:id="@+id/tvSexLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="42dp"
+                    android:text="Sex"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_register_dob" />
+
+                <!-- Gender Spinner -->
+                <Spinner
+                    android:id="@+id/spinnerGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="80dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editText_register_dob" />
+
+                <!-- Email EditText -->
+                <EditText
+                    android:id="@+id/editText_register_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="32dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/tryedittext"
+                    android:padding="12dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/Green_blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/spinnerGender" />
+
+
+                <!-- Cellphone Number EditText -->
+        <EditText
+            android:id="@+id/editText_register_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="32dp"
+            android:hint="Cellphone Number"
+            android:inputType="phone"
+            android:background="@drawable/tryedittext"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/Green_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editText_register_email" />
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/editText_register_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="32dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/tryedittext"
+            android:drawableRight="@drawable/baseline_remove_red_eye_24"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/Green_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editText_register_phone" />
+
+        <!-- Confirm Password EditText -->
+        <EditText
+            android:id="@+id/editText_register_confirm_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="32dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:background="@drawable/tryedittext"
+            android:drawableRight="@drawable/baseline_remove_red_eye_24"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/Green_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editText_register_password" />
+
+        <CheckBox
+            android:id="@+id/checkbox_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:text="I agree to the Terms and Conditions and Privacy Policy"
+            android:textColor="@color/white"
+            android:buttonTint="@color/Green_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editText_register_confirm_password" />
+
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/Green_blue"
+            android:text="Register Now!"
+            android:textColor="@android:color/white"
+            android:elevation="4dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_terms" />
+
+        <!-- Login Now TextView -->
+        <TextView
+            android:id="@+id/loginNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Already have an account?  Sign In"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnRegister" />
+
+        <!-- ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/btnRegister"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.ClinicApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/lavender</item>
+        <item name="colorPrimaryVariant">@color/lavender</item>
+        <item name="android:statusBarColor">@color/GreenAdmin</item>
+        <!-- Customize your light theme here -->
+    </style>
+
+    <style name="Theme.ClinicApp" parent="Base.Theme.ClinicApp" />
+
+    <style name="LoginRegisterActivityTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/light_gray</item>
+        <!-- Other customizations for Login/Register -->
+    </style>
+</resources>

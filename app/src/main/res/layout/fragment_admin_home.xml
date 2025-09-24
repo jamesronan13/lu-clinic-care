@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Upcoming Appointments Section -->
+        <TextView
+            android:id="@+id/tv_upcoming_appointments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upcoming Appointments"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btn_view_upcoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View All Upcoming Appointments"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/GreenAdmin" /> <!-- Changed to GreenAdmin -->
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:layout_marginVertical="16dp" />
+
+        <!-- Appointment History Section -->
+        <TextView
+            android:id="@+id/tv_appointment_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment History"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btn_view_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Appointment History"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/GreenAdmin" /> <!-- Changed to GreenAdmin -->
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:layout_marginVertical="16dp" />
+
+        <!-- Manage Available Day Section -->
+        <TextView
+            android:id="@+id/tv_manage_available_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage Available Day"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btn_manage_available_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Available Day"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/GreenAdmin" /> <!-- Changed to GreenAdmin -->
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:layout_marginVertical="16dp" />
+
+        <!-- Statistics Overview for Upcoming Appointments Section -->
+        <TextView
+            android:id="@+id/tv_statistics_overview_appointments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statistics Overview for Upcoming Appointments"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tv_total_appointments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Appointments: 0"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tv_medical_appointments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical Appointments: 0"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tv_dental_appointments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dental Appointments: 0"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tv_most_requested_services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Most Requested Services: N/A"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tv_peak_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peak Booking Times: N/A"
+            android:padding="4dp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:layout_marginVertical="16dp" />
+
+        <!-- Statistics Overview for Appointment History Section -->
+        <TextView
+            android:id="@+id/tv_statistics_overview_appointmentHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statistics Overview for Appointment History"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tv_total_appointments_appointmentHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Appointments: 0"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tv_total_appointments_completed_appointmentHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Appointments (Completed): 0"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tv_total_appointments_cancelled_appointmentHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Appointments (Cancelled): 0"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tv_medical_appointments_appointmentHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical Appointments: 0"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tv_dental_appointments_appointmentHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dental Appointments: 0"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tv_most_requested_services_appointmentHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Most Requested Services: N/A"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tv_peak_times_appointmentHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peak Booking Times: N/A"
+            android:padding="4dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Section 1 -->
+        <TextView
+            android:id="@+id/label_upcoming_appointments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="16dp"
+            android:text="Upcoming Appointments"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <ImageView
+            android:id="@+id/img_upcoming_appointments"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/label_upcoming_appointments"
+            android:contentDescription="View My Upcoming Appointments"
+            android:src="@drawable/upcoming_appointment"
+            android:layout_marginTop="16dp" />
+
+        <!-- Divider between Section 1 and Section 2 -->
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/img_upcoming_appointments"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white" />
+
+        <!-- Section 2 -->
+        <ImageView
+            android:id="@+id/img_appointment_history"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/appointment_history"
+            android:contentDescription="View Appointment History"
+            android:layout_below="@id/divider1"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/label_appointment_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment History"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/divider1"
+            android:layout_toEndOf="@id/img_appointment_history"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Divider between Section 2 and Section 3 -->
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/img_appointment_history"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white" />
+
+        <!-- Section 3 -->
+        <TextView
+            android:id="@+id/label_go_to_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Appointment"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/divider2"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp" />
+
+        <ImageView
+            android:id="@+id/img_go_to_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/book_appointment"
+            android:contentDescription="Go to Appointment Fragment"
+            android:layout_below="@id/divider2"
+            android:layout_toEndOf="@id/label_go_to_appointment"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" />
+
+    </RelativeLayout>
+</ScrollView>
