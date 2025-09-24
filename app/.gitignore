@@ -16,3 +16,6 @@ Thumbs.db
 
 # Firebase Admin SDK key (for future safety)
 serviceAccountKey.json
+
+# Firebase config
+google-services.json
